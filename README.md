@@ -1,2 +1,7 @@
-# Deep-Learning-Course-Work-Final---Teo-Jia-Yin
-Deep Learning Course Work Final - Teo Jia Yin
+Here's a complete and cohesive paragraph-style summary combining all the information from your **Model Performance Analysis**:
+
+---
+
+The model underwent a significant performance boost after fine-tuning using transfer learning with the ResNet50V2 architecture. Initially, the model included two dense layers (512 and 256 neurons), trained with a learning rate of 0.001 over 10 epochs. However, it showed signs of overfitting, as reflected in the rising validation loss despite reasonable training accuracy. To improve generalization, the fine-tuned model introduced a third dense layer (128 neurons), incorporated a dropout layer with a 0.3 rate, reduced the learning rate to 0.00005, and increased the number of training epochs to 50, with early stopping (patience set to 10) to prevent overfitting. These changes led to more stable training and validation curves, improved validation accuracy, and better performance on unseen test data.
+
+Several factors contributed to the model’s improvement. Leveraging ResNet50V2’s pre-trained weights allowed the model to utilize robust feature extraction capabilities developed on the ImageNet dataset, reducing the need for extensive data. The addition of fully connected layers enabled the network to learn dataset-specific patterns, while dropout regularization and image augmentation techniques (like flipping, rotation, and rescaling) enhanced the model's robustness. Despite the improved results, potential limitations such as increased training time and risk of overfitting with prolonged fine-tuning were noted. Nonetheless, the final verdict is clear—the fine-tuned model achieved better accuracy, reduced overfitting, and improved overall generalization performance, making it a more reliable solution for classifying fruits and vegetables into 36 categories.
